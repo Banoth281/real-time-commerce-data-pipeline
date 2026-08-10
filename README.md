@@ -35,8 +35,8 @@ Python 3.12, Redpanda (Kafka API), PostgreSQL 16, FastAPI, Docker Compose, Pydan
 Prerequisites: Docker Desktop and Git.
 
 ```bash
-git clone <your-repository-url>
-cd realtime-commerce-pipeline
+git clone https://github.com/Banoth281/real-time-commerce-data-pipeline.git
+cd real-time-commerce-data-pipeline
 cp .env.example .env
 docker compose up --build -d
 ```
@@ -111,4 +111,3 @@ pytest -q
 ## Future cloud extension
 
 Deploy the same design using Amazon MSK or Azure Event Hubs, a managed PostgreSQL service, object-storage archival, dbt transformations, Prometheus/Grafana monitoring and Terraform infrastructure.
-
