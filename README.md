@@ -6,11 +6,11 @@ A production-style streaming data engineering project that generates e-commerce 
 
 ```mermaid
 flowchart LR
-    A[Order generator] -->|JSON events| B[Redpanda / Kafka]
-    B --> C[Python stream processor]
-    C -->|valid events| D[(PostgreSQL)]
-    C -->|invalid events| E[Dead-letter topic]
-    D --> F[FastAPI analytics API]
+    A["Order generator"] -->|"JSON events"| B["Redpanda and Kafka"]
+    B --> C["Python stream processor"]
+    C -->|"Valid events"| D["PostgreSQL"]
+    C -->|"Invalid events"| E["Dead-letter topic"]
+    D --> F["FastAPI analytics API"]
 ```
 
 ## Engineering features
