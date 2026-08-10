@@ -13,6 +13,20 @@ flowchart LR
     D --> F["FastAPI analytics API"]
 ```
 
+## Project in action
+
+| Live API documentation | Successful health check |
+| --- | --- |
+| ![FastAPI endpoint overview](docs/images/api-overview.png) | ![API health check returning status ok](docs/images/health-check.png) |
+
+| Real-time sales summary | Revenue by product category |
+| --- | --- |
+| ![Live orders and revenue summary](docs/images/sales-summary.png) | ![Category-level commerce analytics](docs/images/category-analytics.png) |
+
+### Streaming performance
+
+![Processed-event count and pipeline latency](docs/images/pipeline-latency.png)
+
 ## Engineering features
 
 - Kafka-compatible event ingestion with keyed order events
