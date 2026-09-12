@@ -1,5 +1,7 @@
 # Real-Time Commerce Data Pipeline
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open_Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://real-time-commerce-data-pipeline-db39b7gmu7trypz8vlj6sg.streamlit.app/)
+
 A production-style streaming data engineering project that generates e-commerce orders, publishes them to a Kafka-compatible event stream, validates and processes them, stores analytics-ready data in PostgreSQL, and exposes live business metrics through a FastAPI service.
 
 > **Recruiter demo:** the Streamlit dashboard automatically uses a representative
