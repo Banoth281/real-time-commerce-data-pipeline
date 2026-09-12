@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "orders": 7842,
+    "revenue": 1284650.75,
+    "average_order_value": 163.82,
+    "customers": 5236
+  },
+  "latency": {
+    "processed_events": 7842,
+    "average_ms": 28.6,
+    "p95_ms": 61.4
+  },
+  "categories": [
+    {"category": "Electronics", "orders": 1458, "units": 2276, "revenue": 421680.40},
+    {"category": "Home & Garden", "orders": 1364, "units": 2418, "revenue": 238415.65},
+    {"category": "Fashion", "orders": 1712, "units": 3196, "revenue": 196840.30},
+    {"category": "Sports", "orders": 1128, "units": 1843, "revenue": 156730.20},
+    {"category": "Beauty", "orders": 1195, "units": 2210, "revenue": 139564.10},
+    {"category": "Books", "orders": 985, "units": 1764, "revenue": 31420.10}
+  ],
+  "sales_over_time": [
+    {"time": "2026-09-12T08:00:00Z", "orders": 318, "revenue": 48250.40},
+    {"time": "2026-09-12T09:00:00Z", "orders": 427, "revenue": 67180.20},
+    {"time": "2026-09-12T10:00:00Z", "orders": 516, "revenue": 82490.75},
+    {"time": "2026-09-12T11:00:00Z", "orders": 604, "revenue": 101280.30},
+    {"time": "2026-09-12T12:00:00Z", "orders": 671, "revenue": 116740.65},
+    {"time": "2026-09-12T13:00:00Z", "orders": 748, "revenue": 128950.10},
+    {"time": "2026-09-12T14:00:00Z", "orders": 812, "revenue": 139420.55},
+    {"time": "2026-09-12T15:00:00Z", "orders": 759, "revenue": 124870.80},
+    {"time": "2026-09-12T16:00:00Z", "orders": 694, "revenue": 113640.25},
+    {"time": "2026-09-12T17:00:00Z", "orders": 635, "revenue": 104260.40},
+    {"time": "2026-09-12T18:00:00Z", "orders": 587, "revenue": 94810.20},
+    {"time": "2026-09-12T19:00:00Z", "orders": 543, "revenue": 87650.15}
+  ],
+  "country_metrics": [
+    {"country": "United Kingdom", "orders": 3264, "revenue": 548760.40},
+    {"country": "Germany", "orders": 1168, "revenue": 191430.25},
+    {"country": "France", "orders": 1035, "revenue": 168920.70},
+    {"country": "Netherlands", "orders": 792, "revenue": 127680.35},
+    {"country": "Ireland", "orders": 681, "revenue": 109430.20},
+    {"country": "Spain", "orders": 522, "revenue": 82140.65},
+    {"country": "Italy", "orders": 380, "revenue": 56288.20}
+  ],
+  "recent_orders": [
+    {"event_time": "2026-09-12T19:48:16Z", "order_id": "ORD-984215", "category": "Electronics", "product": "Laptop", "quantity": 1, "total_amount": 899.99, "country": "GB", "status": "Valid"},
+    {"event_time": "2026-09-12T19:47:42Z", "order_id": "ORD-357108", "category": "Home & Garden", "product": "Coffee machine", "quantity": 2, "total_amount": 259.98, "country": "DE", "status": "Valid"},
+    {"event_time": "2026-09-12T19:46:31Z", "order_id": "ORD-620473", "category": "Fashion", "product": "Running shoes", "quantity": 1, "total_amount": 84.50, "country": "FR", "status": "Valid"},
+    {"event_time": "2026-09-12T19:45:05Z", "order_id": "ORD-148629", "category": "Sports", "product": "Fitness tracker", "quantity": 1, "total_amount": 129.00, "country": "GB", "status": "Valid"},
+    {"event_time": "2026-09-12T19:43:54Z", "order_id": "ORD-791356", "category": "Beauty", "product": "Skin-care set", "quantity": 3, "total_amount": 112.75, "country": "IE", "status": "Valid"},
+    {"event_time": "2026-09-12T19:42:28Z", "order_id": "ORD-436982", "category": "Electronics", "product": "Wireless headphones", "quantity": 2, "total_amount": 179.98, "country": "NL", "status": "Valid"},
+    {"event_time": "2026-09-12T19:40:17Z", "order_id": "ORD-205714", "category": "Books", "product": "Data engineering handbook", "quantity": 1, "total_amount": 39.99, "country": "GB", "status": "Valid"},
+    {"event_time": "2026-09-12T19:38:49Z", "order_id": "ORD-863540", "category": "Home & Garden", "product": "Desk lamp", "quantity": 2, "total_amount": 69.90, "country": "ES", "status": "Valid"}
+  ]
+}
