@@ -13,3 +13,5 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
+      - run: python -m compileall src dashboard
+      - run: python -m json.tool dashboard/demo_data.json > /dev/null
