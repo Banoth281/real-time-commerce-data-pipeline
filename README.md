@@ -2,6 +2,11 @@
 
 A production-style streaming data engineering project that generates e-commerce orders, publishes them to a Kafka-compatible event stream, validates and processes them, stores analytics-ready data in PostgreSQL, and exposes live business metrics through a FastAPI service.
 
+> **Recruiter demo:** the Streamlit dashboard automatically uses a representative
+> commerce snapshot when the local FastAPI service is unavailable. Follow the
+> [public demo deployment](#-deploy-the-public-recruiter-demo) steps to create a
+> shareable `streamlit.app` URL.
+
 ## Architecture
 
 ```mermaid
@@ -121,6 +126,46 @@ python -m pytest -q
 ## Suggested portfolio description
 
 > Built a containerised real-time e-commerce analytics pipeline using Python, Kafka-compatible Redpanda, PostgreSQL and FastAPI. Implemented schema validation, dead-letter handling, manual offset management, transactional persistence and idempotent event processing, with live revenue and latency metrics exposed through REST APIs.
+
+
+## 🌐 Deploy the Public Recruiter Demo
+
+The public dashboard does not require Redpanda/Kafka, PostgreSQL or FastAPI. It
+uses the representative snapshot in `dashboard/demo_data.json`. When a
+reachable API is configured, headline sales, category and latency metrics
+automatically switch to live mode.
+
+1. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) with GitHub.
+2. Select **Create app** and enter:
+   - Repository: `Banoth281/real-time-commerce-data-pipeline`
+   - Branch: `main`
+   - App file: `dashboard/app.py`
+   - Python version: `3.12`
+3. Choose an available app URL and select **Deploy**.
+4. Open the public URL in a private browser window to confirm recruiter access.
+
+Streamlit uses `dashboard/requirements.txt`, keeping the hosted demo small and
+independent from the complete streaming environment.
+
+After deployment, add the real URL near the top of this README:
+
+```markdown
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open_Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://YOUR-APP.streamlit.app)
+```
+
+### Optional live API mode
+
+Set `API_BASE_URL` in Streamlit secrets to a publicly hosted FastAPI base URL.
+If it is unreachable, the dashboard falls back safely to portfolio demo mode.
+
+## Dashboard structure
+
+```text
+dashboard/
+├── app.py
+├── demo_data.json
+└── requirements.txt
+```
 
 ## Future cloud extension
 
